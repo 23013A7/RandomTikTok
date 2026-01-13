@@ -60,7 +60,9 @@
                                 const response = await fetch('http://f1165082.xsph.ru/api/RandomTikTok/RandomTikTik');
                                 const data = await response.json(); 
                                 
-                                let videoId = data.TikTok; 
+                                let TikTokJSON = data.TikTok; 
+                                let videoId = TikTokJSON.Id;
+                                console.log(videoId);
                         
                                 container.innerHTML = '';
                         
